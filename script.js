@@ -14,9 +14,20 @@ function addNote() {
       </div>
     </div>`
     wrapper.setAttribute("class", "note col-lg-4 col-md-6 mb-3")
-    if (titleField.value == "" || titleNote.value == "") {
+    if (titleField.value == "") {
         let alert = document.createElement("div")
-        alert.innerHTML = "Note is empty"
+        alert.innerHTML = "Title field cannot be empty"
+        alert.setAttribute("class", "alert alert-danger w-100 position-absolute")
+        alert.setAttribute("role", "alert")
+        document.body.insertAdjacentElement("afterbegin", alert)
+        setTimeout(() => {
+            alert.remove()
+        }, 2000)
+        return
+    }
+    if (titleNote.value == "") {
+        let alert = document.createElement("div")
+        alert.innerHTML = "Note field cannot be empty"
         alert.setAttribute("class", "alert alert-danger w-100 position-absolute")
         alert.setAttribute("role", "alert")
         document.body.insertAdjacentElement("afterbegin", alert)
