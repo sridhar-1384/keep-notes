@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- fevicon -->
+  <link rel="icon" type="image/x-icon" href="/IMAGES/images (1).jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="start ">
+    <img id="note-image" src="/IMAGES/images.jpg" alt="Note">
+    <h1>Notes</h1>
+    <button id="button-clear" type="button" class="btn btn-sm btn-outline-danger ms-auto h-3">Clear All</button>
+  </div>
+  <div class="note-box">
+    <div class="input-group mb-3">
+      <span class="input-group-text">Title</span>
+      <textarea id="text-title" class="form-control" aria-label="With textarea" rows="1"></textarea>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">Note</span>
+      <textarea id="text-note" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div class="button-div">
+      <button id="button-create" class="btn btn-lg btn-success">Create</button>
+    </div>
+
+  </div>
+
+  <div class="note-cards container">
+    <div class="row">
+
+    </div>
+  </div>
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>
